@@ -1,0 +1,18 @@
+- 메인 돌리는거
+- App
+
+- Appinsert
+
+- AppMain (설문 시작과 통계 선택하여 보기)
+
+- AppSelect
+( 만약 ---를 제외한 다른 단어 입력시 재입력 바람으로 출력)
+P. 설문시작 | S. 통계 | D. 삭제 | C.회원중복확인 | SR.검색 | DA.전체삭제 | Q. 종료
+
+- AppUpdate 
+
+- AppDelete
+
+- AppSearch
+
+- 
