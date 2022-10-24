@@ -105,7 +105,7 @@ VALUES("ADMIN","A1");
 INSERT INTO auth_names (AUTH_NAME,AUTH_UNIQUE_ID)
 VALUES("GUEST","A2");
 
--- user_auth
+-- user_auth 사용자권한목록
 INSERT INTO user_auth (AUTH_UNIQUE_ID,USER_ID)
 VALUES("A1","ADMIN");
 
@@ -124,7 +124,7 @@ VALUES("A2","USER4");
 INSERT INTO user_auth (AUTH_UNIQUE_ID,USER_ID)
 VALUES("A2","USER5");
 
--- survey
+-- survey 설문전체
 INSERT INTO survey (QUESTION_ID,ANSWER_ID,USER_ID)
 VALUES("QUESTION1","ANSWER1","USER1");
 
