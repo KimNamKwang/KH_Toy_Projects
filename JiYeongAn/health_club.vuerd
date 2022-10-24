@@ -3,9 +3,15 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
+<<<<<<< HEAD
+    "scrollTop": -29,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+=======
     "scrollTop": -333.3333333333334,
     "scrollLeft": -555,
     "zoomLevel": 0.8,
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -206,7 +212,7 @@
           "active": false,
           "left": 508.7295,
           "top": 682.4447,
-          "zIndex": 4,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60,
           "color": "#2196F3"
@@ -290,9 +296,15 @@
         ],
         "ui": {
           "active": false,
+<<<<<<< HEAD
+          "left": 539.0942,
+          "top": 218.4608,
+          "zIndex": 2,
+=======
           "left": 513.5386,
           "top": 369.5715,
           "zIndex": 3,
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
           "widthName": 65.41943359375,
           "widthComment": 60,
           "color": "#F8F8F8"
@@ -353,9 +365,15 @@
         ],
         "ui": {
           "active": false,
+<<<<<<< HEAD
+          "left": 0,
+          "top": 694.6516,
+          "zIndex": 6,
+=======
           "left": 10.603,
           "top": 366.8739,
           "zIndex": 2,
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
           "widthName": 60,
           "widthComment": 60,
           "color": "#FFFFFF"
@@ -462,9 +480,15 @@
         ],
         "ui": {
           "active": false,
+<<<<<<< HEAD
+          "left": 1089.03,
+          "top": 661.1108,
+          "zIndex": 3,
+=======
           "left": 1030.1415,
           "top": 354.444,
           "zIndex": 5,
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
           "widthName": 60,
           "widthComment": 60,
           "color": "#FFFFFF"
@@ -525,9 +549,15 @@
         ],
         "ui": {
           "active": false,
+<<<<<<< HEAD
+          "left": 1082.7531,
+          "top": 75.0012,
+          "zIndex": 5,
+=======
           "left": 1563.8642578125,
           "top": 230.5567,
           "zIndex": 6,
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
           "widthName": 85.60498046875,
           "widthComment": 60
         },
@@ -587,14 +617,85 @@
         ],
         "ui": {
           "active": false,
+<<<<<<< HEAD
+          "left": 1079.6667,
+          "top": 315.7776,
+          "zIndex": 4,
+=======
           "left": 1027.4446,
           "top": 82.4447,
           "zIndex": 7,
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
           "widthName": 72.2431640625,
           "widthComment": 93
         },
         "visible": true,
         "id": "4eb699c2-a564-4b92-97bc-5865d0f6d9b2"
+<<<<<<< HEAD
+      },
+      {
+        "name": "QUESTION_ANSWERS",
+        "comment": "문항답항",
+        "columns": [
+          {
+            "name": "QUESTION_ID",
+            "comment": "문항고유값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 83.78955078125,
+              "widthComment": 67,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "df4d1bc7-d466-4fb0-b24b-1c5fe92764f4"
+          },
+          {
+            "name": "ANSWER_ID",
+            "comment": "답항고유값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72.9794921875,
+              "widthComment": 67,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "aa2ddae4-1469-4c25-acc7-16132ba9cf27"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 0,
+          "top": 209.1106,
+          "zIndex": 7,
+          "widthName": 130.62255859375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2d5c3c28-2736-4b33-bf16-0dca22fa909c"
+=======
+>>>>>>> bbe83206602ec62c7de09402d8a4b2bb820ca852
       }
     ],
     "indexes": []
