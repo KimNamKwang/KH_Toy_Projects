@@ -4,8 +4,8 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": 0,
-    "zoomLevel": 0.8,
+    "scrollLeft": -110.66666666666667,
+    "zoomLevel": 0.7,
     "show": {
       "tableComment": true,
       "columnComment": true,
