@@ -38,12 +38,17 @@ public class AppMain {
                     // - SELECT * FROM users ;
                     String query = "SELECT * FROM user WHERE NAME = '"+loginName+"' AND PASSWORD = '"+loginPassword+"';";
                     ResultSet resultSet = statement.executeQuery(query);
-                    System.out.println("설문을 시작합니다.");
+                    System.out.println("== 설문을 시작합니다. ==\n");
                     query = "SELECT QUESTION FROM question;";
                     resultSet = statement.executeQuery(query);
                     while(resultSet.next()) {
                         String QUESTION = resultSet.getString("QUESTION");
-                        System.out.print("QUESTION :" + QUESTION);
+                        System.out.print(QUESTION);
+                    }else {
+                        System.out.println("-----------------------\n"
+                                    +"회원정보가 없습니다.\n"
+                                    +"-----------------------");
+                        break;
                     }
                     break;
                 case "S" :
