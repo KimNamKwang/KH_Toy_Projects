@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 import com.mysql.cj.xdevapi.Result;
 
-public class App_0 {
+public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");

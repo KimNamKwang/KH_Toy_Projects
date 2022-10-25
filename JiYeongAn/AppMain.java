@@ -9,7 +9,7 @@ public class AppMain {
 
         // - MySQL workbench  실행 : JDBC
         // - User/password와 접속 IP:port 접속
-        String url = "jdbc:mysql://localhost:3306/study_sqls";
+        String url = "jdbc:mysql://localhost:3306/health_club";
         String user = "root";
         String password = "*khacademy!";
 
@@ -19,6 +19,8 @@ public class AppMain {
         // - query Edit
         Statement statement = connection.createStatement();
         
+        
+
         System.out.println("홀리몰리 헬스장 만족도 설문조사\n");
         String input;
         do{
@@ -33,6 +35,16 @@ public class AppMain {
                     String loginName = scanner.nextLine();
                     System.out.print("- 비밀번호를 입력하세요 : ");
                     String loginPassword = scanner.nextLine();
+                    // - SELECT * FROM users ;
+                    String query = "SELECT * FROM user WHERE NAME = '"+loginName+"' AND PASSWORD = '"+loginPassword+"';";
+                    ResultSet resultSet = statement.executeQuery(query);
+                    System.out.println("설문을 시작합니다.");
+                    query = "SELECT QUESTION FROM question;";
+                    resultSet = statement.executeQuery(query);
+                    while(resultSet.next()) {
+                        String QUESTION = resultSet.getString("QUESTION");
+                        System.out.print("QUESTION :" + QUESTION);
+                    }
                     break;
                 case "S" :
 
