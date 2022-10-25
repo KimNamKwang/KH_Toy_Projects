@@ -15,6 +15,7 @@ public class AppMain {
 
         try{
         Connection connection = DriverManager.getConnection(url,user,password);
+        System.out.println("DB연결 성공");
         // - query Edit
         Statement statement = connection.createStatement();
         
@@ -57,6 +58,7 @@ public class AppMain {
             }
         } while (!input.equals("Q"));
         }catch(SQLException exception){
+            System.out.println("DB접속 실패");
             exception.printStackTrace();
         }
     }
