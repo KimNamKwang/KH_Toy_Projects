@@ -42,36 +42,9 @@ public class AppMain {
                         System.out.println("\n== 설문을 시작합니다. ==\n");
                         query = "SELECT QUESTION FROM question;";
                         resultSet = statement.executeQuery(query);
-                        int num;
-                        String answer = "";
                         while(resultSet.next()) {
                             String QUESTION = resultSet.getString("QUESTION");
                             System.out.println(QUESTION);
-                            System.out.println("(1)매우만족 (2)만족 (3)보통 (4)불만 (5)매우불만");
-                            System.out.print("답) ");
-                            num = scanner.nextInt();
-                            switch(num) {
-                                case 1 :
-                                    answer = "(1)매우만족";
-                                    break;
-                                case 2 :
-                                    answer = "(2)만족";
-                                    break;
-                                case 3 :
-                                    answer = "(3)보통";
-                                    break;
-                                case 4 :
-                                    answer = "(4)불만";
-                                    break;
-                                case 5 :
-                                    answer = "(5)매우불만족";
-                                    break;
-                                default :
-                                    System.out.println("잘못된 숫자입니다.");
-                            }
-                            query = "SELECT ANSWER_ID FROM answer WHERE ANSWER = '"+answer+"';";
-                            resultSet = statement.executeQuery(query);
-                            String ANSWER = resultSet.getString("ANSWER");
                         }
                     }else {
                         System.out.println("-----------------------\n"

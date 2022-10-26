@@ -24,7 +24,7 @@ public class AppDelete {
             resultSet = statement.executeQuery(query);
        
             //Scanner로 입력받은 USER_NAME과 USER_ID를 어떻게 엮을지 고민.-> 했으나 극뽁-! ->한 줄 알았는데 FAIL
-
+            //dgsgdsgsewfewg
             statement.executeQuery(query);
             }
     

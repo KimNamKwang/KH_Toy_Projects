@@ -5,7 +5,11 @@
     "height": 2000,
     "scrollTop": 0,
     "scrollLeft": 0,
+<<<<<<< HEAD
     "zoomLevel": 0.8,
+=======
+    "zoomLevel": 0.9,
+>>>>>>> a9fb5a64fd239ade92d63157d6db29b69bbc1d2a
     "show": {
       "tableComment": true,
       "columnComment": true,
