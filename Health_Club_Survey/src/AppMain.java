@@ -24,7 +24,7 @@ public class AppMain {
         String input;
         do{
             System.out.print("-------------------------------------------------------------------------------\n"
-                            + "P. 설문시작 | S. 통계 | D. 삭제 | C.회원중복확인 | SR.검색 | DA.전체삭제 | Q. 종료\n"
+                            + "P. 설문시작 | S. 통계 | D. 삭제 | C. 회원중복확인 | SR. 검색 | DA. 전체삭제 | Q. 종료\n"
                             + "-------------------------------------------------------------------------------\n"
                             + "선택 : ");
             input = scanner.nextLine();
@@ -36,19 +36,18 @@ public class AppMain {
 
                     break;
                 case "Q" :
-
                     break;
                 case "D" :
-                    new AppDelete().
+                    new AppDelete().DeleteFunction(statement, scanner);
                     break;
                 case "C" :
                     new AppCheck().checkFuction(statement, scanner);
                     break;
                 case "SR" :
-                        
+                    
                     break;
                 case "DA" :
-
+                    new AppDeleteAll().DeleteAllFunction(statement, scanner);
                     break;
                 default :
                     System.out.println("=== 재입력 바람 ===");
