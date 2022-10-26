@@ -50,7 +50,7 @@ public class AppStart {
                                         System.out.println("잘못된 숫자입니다.");
                                 }
                                 // 오류 해결을 위한 새로운 Statement
-                                Statement statement2 = connection.createStatement();;
+                                Statement statement2 = connection.createStatement();
                                 
                                 // ANSWER_ID값 담기
                                 query = "SELECT ANSWER_ID FROM answer WHERE ANSWER = '"+ answer +"';";
