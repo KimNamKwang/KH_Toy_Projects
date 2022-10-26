@@ -30,27 +30,9 @@ public class AppMain {
             input = scanner.nextLine();
             switch(input) {
                 case "P" :
-                    System.out.print("\n- 이름을 입력하세요 : ");
-                    String loginName = scanner.nextLine();
-                    System.out.print("- 비밀번호를 입력하세요 : ");
-                    String loginPassword = scanner.nextLine();
-                    // - SELECT * FROM users ;
-                    String query = "SELECT * FROM user WHERE NAME = '"+loginName+"' AND PASSWORD = '"+loginPassword+"';";
-                    ResultSet resultSet = statement.executeQuery(query);
-                    //ResultSet resultSet2 = statement.executeQuery(query);
-                    if(resultSet.isBeforeFirst()) {
-                        System.out.println("\n== 설문을 시작합니다. ==\n");
-                        query = "SELECT QUESTION FROM question;";
-                        resultSet = statement.executeQuery(query);
-                        while(resultSet.next()) {
-                            String QUESTION = resultSet.getString("QUESTION");
-                            System.out.println(QUESTION);
-                        }
-                    }else {
-                        System.out.println("-----------------------\n"
-                                    +"회원정보가 없습니다.\n"
-                                    +"-----------------------");
-                    }
+                    new AppStart().startFunction(statement, scanner, connection);
+                    //버퍼 제거 ㅠ
+                    scanner.nextLine();
                     break;
                 case "S" :
 
@@ -62,7 +44,7 @@ public class AppMain {
 
                     break;
                 case "C" :
-
+                    new AppCheck().checkFuction(statement, scanner);
                     break;
                 case "SR" :
 
