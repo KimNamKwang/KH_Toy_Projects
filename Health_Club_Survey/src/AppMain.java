@@ -36,19 +36,18 @@ public class AppMain {
 
                     break;
                 case "Q" :
-
                     break;
                 case "D" :
-                    new AppDelete().
+                    new AppDelete().DeleteFunction(statement, scanner);
                     break;
                 case "C" :
                     new AppCheck().checkFuction(statement, scanner);
                     break;
                 case "SR" :
-                        
+                    
                     break;
                 case "DA" :
-
+                    new AppDeleteAll().DeleteAllFunction(statement, scanner);
                     break;
                 default :
                     System.out.println("=== 재입력 바람 ===");
