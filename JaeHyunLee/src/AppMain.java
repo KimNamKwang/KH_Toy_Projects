@@ -25,7 +25,7 @@ public class AppMain {
         do{
             System.out.print("-------------------------------------------------------------------------------\n"
                             + "P. 설문시작 | S. 통계 | D. 삭제 | C.회원중복확인 | SR.검색 | DA.전체삭제 | Q. 종료\n"
-                            + "-------------s------------------------------------------------------------------\n"
+                            + "-------------------------------------------------------------------------------\n"
                             + "선택 : ");
             input = scanner.nextLine();
             switch(input) {
@@ -44,7 +44,7 @@ public class AppMain {
                     new AppCheck().checkFuction(statement, scanner);
                     break;
                 case "SR" :
-                    
+                //new AppSearch().SearchFunction(statement);
                     break;
                 case "DA" :
                     new AppDeleteAll().DeleteAllFunction(statement, scanner);
