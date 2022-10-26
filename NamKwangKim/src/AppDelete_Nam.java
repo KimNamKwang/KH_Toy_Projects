@@ -2,8 +2,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class AppDelete {
-    public void DeleteFunction(Statement statement) {
+public class AppDelete_Nam {
+    public void DeleteFunction(Statement statement, Scanner scanner2) {
         Scanner scanner = new Scanner(System.in);
         // 커맨드 받기.
         System.out.print("이름을 입력해주세요 : ");
