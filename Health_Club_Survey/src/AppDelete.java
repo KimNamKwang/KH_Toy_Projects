@@ -67,6 +67,4 @@ public class AppDelete {
         }
     }
 
-    public void DeleteFunction(Statement statement, Scanner scanner) {
-    }
 }
