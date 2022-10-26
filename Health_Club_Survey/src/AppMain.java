@@ -31,8 +31,6 @@ public class AppMain {
             switch(input) {
                 case "P" :
                     new AppStart().startFunction(statement, scanner, connection);
-                    //버퍼 제거 ㅠ
-                    scanner.nextLine();
                     break;
                 case "S" :
 
