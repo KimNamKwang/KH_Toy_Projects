@@ -2,7 +2,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class AppDelete {
+public class AppDelete_Nam {
     public void DeleteFunction(Statement statement) {
         Scanner scanner = new Scanner(System.in);
         // 커맨드 받기.

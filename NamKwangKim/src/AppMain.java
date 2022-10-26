@@ -32,9 +32,13 @@ public class AppMain {
         //    appDelete.DeleteFunction(statement);
 
             //전체설문내역삭제
-           AppDeleteAll_Nam appDeleteall = new AppDeleteAll_Nam();
-           appDeleteall.DeleteAllFunction(statement);
+        //    AppDeleteAll_Nam appDeleteall = new AppDeleteAll_Nam();
+        //    appDeleteall.DeleteAllFunction(statement);
            
+           AppSearch_Nam appSearch_Nam = new AppSearch_Nam();
+           appSearch_Nam.SearchFunction(statement);
+
+
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
