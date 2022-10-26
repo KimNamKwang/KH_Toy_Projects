@@ -29,6 +29,7 @@ public class AppStart {
                                 System.out.println("(1)매우만족 (2)만족 (3)보통 (4)불만 (5)매우불만");
                                 System.out.print("답) ");
                                 num = scanner.nextInt();
+                                System.out.println();
 
                                 switch(num) {
                                     case 1 :
@@ -50,7 +51,7 @@ public class AppStart {
                                         System.out.println("잘못된 숫자입니다.");
                                 }
                                 // 오류 해결을 위한 새로운 Statement
-                                Statement statement2 = connection.createStatement();;
+                                Statement statement2 = connection.createStatement();
                                 
                                 // ANSWER_ID값 담기
                                 query = "SELECT ANSWER_ID FROM answer WHERE ANSWER = '"+ answer +"';";
@@ -68,17 +69,18 @@ public class AppStart {
                                 query = "INSERT INTO survey (QUESTION_ID,ANSWER_ID,USER_ID) VALUES( '" + QUESTIONID + "', '" + ANSWER + "', '" + USERID + "' );";
                                 statement2.execute(query);
                             }
-                                //버퍼 제거 ㅠ
-                                scanner.nextLine();
-                                System.out.print("-------------------------------\n"
+                                System.out.print("---------------------------------\n"
                                 + "설문이 성공적으로 저장되었습니다.\n"
-                                + "-------------------------------\n\n");
+                                + "---------------------------------\n\n");
                                 
                         }else {
                             System.out.println("-------------------------------\n"
                                         +"회원정보가 없습니다.\n"
                                         +"-------------------------------");
                         }
+                        System.out.println();
+                        //버퍼 제거 ㅠ
+                        scanner.nextLine();
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }

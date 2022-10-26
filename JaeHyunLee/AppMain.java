@@ -9,7 +9,7 @@ public class AppMain {
         // - User/password와 접속 IP:port 접속
         String url = "jdbc:mysql://localhost:3306/health_club";
         String user = "root";
-        String password = "aa6236";
+        String password = "*khacademy!";
 
         try {
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -25,6 +25,7 @@ public class AppMain {
                         + "----------------------------------------------------------------------------------\n"
                         + "선택 : ");
                 input = scanner.nextLine();
+                System.out.println();
                 switch (input) {
                     case "P":
                         new AppStart().startFunction(statement, scanner, connection);
