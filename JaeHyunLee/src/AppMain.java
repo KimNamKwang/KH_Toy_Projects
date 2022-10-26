@@ -79,6 +79,8 @@ public class AppMain {
                                     +"회원정보가 없습---------");
                     }
                     break;
+
+                    
                 case "S" :
                     new AppSelect().selectFunction(statement);
                     break;
