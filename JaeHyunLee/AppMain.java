@@ -9,7 +9,7 @@ public class AppMain {
         // - User/password와 접속 IP:port 접속
         String url = "jdbc:mysql://localhost:3306/health_club";
         String user = "root";
-        String password = "*khacademy!";
+        String password = "aa6236";
 
         try {
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -45,7 +45,7 @@ public class AppMain {
                     case "SR":
                         new AppSearch().SearchFunction(statement, scanner);
                         break;
-                    case "DA":
+                    case "DA": 
                         new AppDeleteAll().DeleteAllFunction(statement, scanner);
                         break;
                     default:
