@@ -13,7 +13,7 @@ public class AppMain {
         String url = "jdbc:mysql://localhost:3306/health_club"; //study_sqls
         // 라이브러리 방식:제품명://IP:PORT/폴더명
         String user = "root";
-        String password = "ghost0916!";
+        String password = "*khacademy!";
 
         // - database지정
         try {
@@ -27,8 +27,13 @@ public class AppMain {
         //    AppSelect appSelect = new AppSelect();
         //    appSelect.SelectFunction(statement);
 
-           AppDelete appDelete = new AppDelete();
-           appDelete.DeleteFunction(statement);
+            //개인설문내역 삭제
+        //    AppDelete appDelete = new AppDelete();
+        //    appDelete.DeleteFunction(statement);
+
+            //전체설문내역삭제
+           AppDeleteAll appDeleteall = new AppDeleteAll();
+           appDeleteall.DeleteAllFunction(statement);
            
         } catch (SQLException exception) {
             exception.printStackTrace();
