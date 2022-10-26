@@ -75,4 +75,3 @@ VALUES("QUESTION4","ANSWER4","USER5");
 
 INSERT INTO survey (QUESTION_ID,ANSWER_ID,USER_ID)
 VALUES("QUESTION5","ANSWER5","USER5");
------------------------------------
