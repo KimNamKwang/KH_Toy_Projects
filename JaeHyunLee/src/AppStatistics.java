@@ -1,34 +1,32 @@
-package JaeHyunLee.src;
-
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 public class AppStatistics {
-    public void StatisticsFunction(Statement statement) {
-        Scanner scanner = new Scanner(System.in);
+    public void StatisticsFunction(Statement statement, Scanner scanner) {
         String input = scanner.next();
+        System.out.print("- 이름을 입력하세요 : ");
+        String checkName = scanner.nextLine();
+        System.out.print("- 비밀번호를 입력하세요 : ");
+        String checkPhoneNumber = scanner.nextLine();
 
-        System.out.print("이름을 입력해주세요 :" + input);
-        String name = input;
-        System.out.print("비밀번호를 입력해주세요 :" + input);
-        String password = input;
-
-        String query = "SELECT * FROM user WHERE NAME = '" + name + "' AND PASSWORD = '" + password + "';";
-
+        String query = "SELECT NAME,PHONE_NUMBER FROM user WHERE NAME = "+ "\"" + checkName + "\""  +" AND PHONE_NUMBER = " + "\""+ checkPhoneNumber + "\"" + ";";
+        ResultSet resultSet;
         try {
-            ResultSet resultSet = statement.executeQuery(query);
-            if (resultSet.isBeforeFirst()) {
-                System.out.println("통계");
-                
-               
+            resultSet = statement.executeQuery(query);
 
-            } else {
-                System.out.println("회원정보가 일치하지 않습니다, 다시 시도해주세요.");
+            if(resultSet.next() == false){
+                System.out.println("-------------------------------");
+                System.out.println("회원정보가 없습니다.");
+                System.out.println("-------------------------------");
             }
-
-        } catch (Exception exception) {
-            exception.printStackTrace();
+            else{
+                System.out.println("-------------------------------");
+                System.out.println("이미 가입된 회원입니다.");
+                System.out.println("-------------------------------");
+            } 
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

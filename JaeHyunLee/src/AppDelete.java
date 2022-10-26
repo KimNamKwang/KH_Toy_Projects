@@ -3,8 +3,8 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 public class AppDelete {
-    public void DeleteFunction(Statement statement) {
-        Scanner scanner = new Scanner(System.in);
+    
+    public void DeleteFunction(Statement statement, Scanner scanner) {
         // 커맨드 받기.
         System.out.print("이름을 입력해주세요 : ");
         String name = scanner.next();
@@ -55,6 +55,8 @@ public class AppDelete {
 
                     }
                 }
+                //버퍼 제거 ㅠ
+                scanner.nextLine();
 
             } else {
                 System.out.println("회원정보가 일치하지 않습니다, 다시 시도해주세요.");
