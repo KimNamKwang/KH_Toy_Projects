@@ -8,24 +8,14 @@ public class AppStatistics {
         System.out.println("");
         System.out.println("통계");
         
-        String query =("SELECT QUESTION_ID,
-        SUM(IF(ANSWER_ID = "ANSWER1",1,0) ) AS 'ANSWER1',
-        SUM(IF(ANSWER_ID = "ANSWER2",1,0) ) AS 'ANSWER2',
-        SUM(IF(ANSWER_ID = "ANSWER3",1,0) ) AS 'ANSWER3',
-        SUM(IF(ANSWER_ID = "ANSWER4",1,0) ) AS 'ANSWER4',
-        SUM(IF(ANSWER_ID = "ANSWER5",1,0) ) AS 'ANSWER5'
-        FROM survey
-        GROUP BY QUESTION_ID
-        WITH ROLLUP"
-        
-        
-        
-        
-        
-        );
-
-
-
+        String query = "SELECT QUESTION_ID ,  
+        COUNT(USER_ID = 'USER1' AND  QUESTION_ID <= 5 AND ANSWER_ID <= 5) AS  '(1)만족',
+        COUNT(USER_ID = 'USER2' AND  QUESTION_ID <= 5 AND ANSWER_ID <= 5) AS '(2)만족', 
+        COUNT(USER_ID = 'USER3' AND  QUESTION_ID <= 5 AND ANSWER_ID <= 5) AS '(3)보통', 
+        COUNT(USER_ID = 'USER4' AND  QUESTION_ID <= 5 AND ANSWER_ID <= 5) AS '(4)불만', 
+        COUNT(USER_ID = 'USER5' AND  QUESTION_ID <= 5 AND ANSWER_ID <= 5) AS '(5)매우불만'
+       FROM survey
+       GROUP BY QUESTION_ID;";
         ResultSet resultSet = null;
         //String query = "SELECT * FROM user;";
                
