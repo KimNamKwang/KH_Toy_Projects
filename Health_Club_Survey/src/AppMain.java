@@ -39,13 +39,13 @@ public class AppMain {
 
                     break;
                 case "D" :
-
+                    new AppDelete().
                     break;
                 case "C" :
                     new AppCheck().checkFuction(statement, scanner);
                     break;
                 case "SR" :
-
+                        
                     break;
                 case "DA" :
 
