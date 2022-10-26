@@ -23,9 +23,9 @@ public class AppMain {
         System.out.println("홀리몰리 헬스장 만족도 설문조사\n");
         String input;
         do{
-            System.out.print("-----------------------------------------------\n"
+            System.out.print("-------------------------------------------------------------------------------\n"
                             + "P. 설문시작 | S. 통계 | D. 삭제 | C.회원중복확인 | SR.검색 | DA.전체삭제 | Q. 종료\n"
-                            + "-----------------------------------------------\n"
+                            + "-------------------------------------------------------------------------------\n"
                             + "선택 : ");
             input = scanner.nextLine();
             switch(input) {
@@ -38,7 +38,11 @@ public class AppMain {
                 case "Q" :
                     break;
                 case "D" :
+<<<<<<< HEAD
                     new AppDelete().DeleteFunction(statement, scanner);
+=======
+                    new AppDelete();
+>>>>>>> 0e2e0de79da2d91b1bdb98459d6522602f449de5
                     break;
                 case "C" :
                     new AppCheck().checkFuction(statement, scanner);
