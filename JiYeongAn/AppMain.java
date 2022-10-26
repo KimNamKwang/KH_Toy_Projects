@@ -38,7 +38,7 @@ public class AppMain {
                 case "Q" :
                     break;
                 case "D" :
-                    new AppDelete().DeleteFunctio(statement, scanner);
+                    new AppDelete().DeleteFunction(statement, scanner);
                     break;
                 case "C" :
                     new AppCheck().checkFuction(statement, scanner);
