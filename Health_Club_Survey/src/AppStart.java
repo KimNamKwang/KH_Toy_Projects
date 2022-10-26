@@ -68,6 +68,12 @@ public class AppStart {
                                 query = "INSERT INTO survey (QUESTION_ID,ANSWER_ID,USER_ID) VALUES( '" + QUESTIONID + "', '" + ANSWER + "', '" + USERID + "' );";
                                 statement2.execute(query);
                             }
+                                //버퍼 제거 ㅠ
+                                scanner.nextLine();
+                                System.out.print("-----------------------------------------------\n"
+                                + "설문이 성공적으로 저장되었습니다.\n"
+                                + "-----------------------------------------------\n\n");
+                                
                         }else {
                             System.out.println("-----------------------\n"
                                         +"회원정보가 없습니다.\n"
