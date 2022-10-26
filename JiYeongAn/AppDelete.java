@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AppDelete {
     
-    public void DeleteFunction(Statement statement, Scanner scanner) {
+    public void DeleteFunctio(Statement statement, Scanner scanner) {
         // 커맨드 받기.
         System.out.print("이름을 입력해주세요 : ");
         String name = scanner.next();
